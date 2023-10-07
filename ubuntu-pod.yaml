@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu
+spec:
+  containers:
+  - name: ubuntu
+    image: goodosoft/my-work-ubuntu:main
+    imagePullPolicy: Always
+    command: ["sleep", "infinity"]
