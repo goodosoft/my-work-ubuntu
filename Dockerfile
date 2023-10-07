@@ -9,4 +9,5 @@ RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && dpkg-reconfigure 
 # install kafka cli
 RUN cd /root&&wget https://dlcdn.apache.org/kafka/3.5.0/kafka_2.13-3.5.0.tgz&&tar -xzvf kafka_2.13-3.5.0.tgz&&rm -f kafka_2.13-3.5.0.tgz
 RUN cd /root&&wget https://api.pgxn.org/dist/pg_repack/1.4.8/pg_repack-1.4.8.zip&&unzip pg_repack-1.4.8.zip&&rm -f pg_repack-1.4.8.zip
+WORKDIR /root
 
